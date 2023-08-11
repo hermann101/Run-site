@@ -1,0 +1,191 @@
+@font-face {
+    font-family: "montserrat";
+    src: url(./Montserrat-VariableFont_wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat',sans-serif;
+    font-weight: 200;
+    list-style: none;
+}
+.btn,#btn{
+    background: none;
+    outline: none;
+    border: 1px solid rgb(218, 210, 210);
+    border-radius: 20px;
+    color: black;
+    padding: 10px 25px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.6 ease;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+.btn:hover{
+    color: black;
+    background: rgb(219, 209, 209);
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 450px;
+    grid-template-rows: 500px 350px 350PX;
+    grid-template-areas: 
+      "t1 t1 i1 i1"
+      "i2 t2 t2 t2"
+      "t3 t3 t3 i3";
+      
+}
+.header_left{
+    grid-area: t1;
+    border-bottom:1px solid rgb(218, 210, 210) ;
+    padding: 130px 20px;
+    line-height: 30px;
+}
+h1,h2{
+    margin-bottom:25px ;
+    font-weight: 350;
+}
+.header_right{
+    grid-area: i1;
+    overflow: hidden;
+    position: relative;
+}
+.header_right img{
+     width: 100%;
+     transform: scale(2);
+     position: absolute;
+     right: 300px;
+     bottom: 190PX;
+    /* height: 500px; */
+    /* transform: translateX(-100px); */
+    /* position: absolute; */
+}
+.img-left{
+    grid-area: i2;
+}
+.img-left img{
+    width: 450px;
+    height: 350px;
+}
+.header_middle{
+    grid-area: t2;
+    border-bottom:1px solid rgb(218, 210, 210) ;
+    padding: 80px 20px;
+    line-height: 30px;
+
+}
+.header_bottom{
+    grid-area: t3;
+    border-bottom:1px solid rgb(218, 210, 210) ;
+    padding: 80px 20px;
+    line-height: 30px;
+}
+.img-right{
+    grid-area: i3;
+    overflow: hidden;
+    position: relative;
+}
+.img-right img{
+    position: absolute;
+    width: 100%;
+    transform: scale(0.999);
+    /* right: 300px; */
+    bottom: -150px;    
+}
+section{
+    text-align: center;
+}
+section h2{
+    margin-top: 50px;
+    font-size: 35px;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 1fr 150px;
+    grid-template-areas: 
+      "entrer1 entrer2 "
+      "entrer3 entrer3 "
+      "button button ";
+    
+    width: 900px;
+    margin: 0 auto;
+}
+.name{
+    grid-area: entrer1;
+    margin-left: 30%;
+
+}
+.mail{
+    grid-area: entrer2;
+    margin-right: 30%;
+
+}
+.message{
+    grid-area: entrer3;
+    margin: 70px 39px 0;
+}
+textarea{
+    width: 620px;
+    resize: none;
+    border: 1px solid rgb(218, 210, 210);
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 100%;
+    font-weight: 400;
+}
+#btn{
+    grid-area: button;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 200px;
+}
+#btn:hover{
+    color: black;
+    background: rgb(219, 209, 209);
+}
+h5{
+    font-size: 80%; 
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+input{
+    font-family: inherit;
+    font-size: 100%;
+    font-weight: 400;
+    border: 1px solid rgb(218, 210, 210);
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+}
+footer{
+    position: relative;
+    
+}
+.footer-logos:before{
+    content:"";
+    width: 80%;
+    height: 1px;
+    position: absolute;
+    background:rgb(218, 210, 210);
+     top:-50px;
+}
+.footer-logos{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5% 300px 50px;
+}
+i{
+    border: 1px solid rgb(218, 210, 210);
+    border-radius: 100%;
+    padding: 12px;
+    transition: 1.2s ease;
+}
+i:hover{
+    color: black;
+    background: rgb(219, 209, 209);
+    cursor: pointer;
+}
